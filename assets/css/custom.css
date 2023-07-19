@@ -352,6 +352,10 @@ a{
   .copyright p a{
     color:#2584C6;
   }
+  .banner{
+    width: 100%;
+    border-bottom: solid 2px #f3f3f3;
+  }
 
 /* footer */
 
