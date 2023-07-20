@@ -91,6 +91,7 @@ a{
     justify-content: center ;
     align-items: center;   
     flex-direction: column; 
+    text-align: center;
     margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -124,7 +125,7 @@ a{
 
 @media (max-width: 575.98px) { 
     .projectNmae{
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 600;
     }
     ul.logosection li:nth-child(2){
@@ -179,6 +180,12 @@ a{
       background-color: var(--navbghover);
       color:var(--navtextcolor);
   }
+  ul.infoBox{
+    margin-top: 15px;
+  }
+  .intro img{
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -208,6 +215,13 @@ a{
    
     .navbar-toggler {
         border: 2px solid coral;
+      }
+
+      ul.infoBox{
+        margin-top: 15px;
+      }
+      .intro img{
+        margin-bottom: 15px;
       }
  }
 
