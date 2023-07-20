@@ -403,7 +403,67 @@ a{
     opacity: 1;
     visibility: visible;
   }
-  
+
+  .imgBox{
+    width: 100%;
+    padding: 10px 0 0;
+
+  }
+  ul.Ministry{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul.Ministry li:nth-child(1){
+    width: 100%;
+    border-bottom: solid 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: left;
+  }
+  ul.Ministry li:nth-child(1) img{
+    height: 165px;
+  }
+  ul.Ministry li img{
+    height: 145px;
+  }
+  ul.Ministry li{
+    width: 50%;
+    background: #fff;
+    border:1px solid #EEEEEF;
+    text-align: center;
+    
+  }
+  .text-left{
+   
+    display: inline-block;   
+    margin-top: 31px;
+    position: absolute;
+  }
+  .name{
+    font-size: 0.99rem;
+    font-weight: 500;
+  }
+  .degination{
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+  a.viewportfolio{
+    font-size: 0.8rem;
+    margin-top: 8px;;
+  }
+  ul.infoBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  ul.infoBox li{
+    width: calc(50% - 7.5px);
+
+  }
   /* Styles for the content section */
   
 
@@ -504,4 +564,17 @@ a{
 @media (min-width: 992px) and (max-width: 1199.98px) {  }
 
 
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+
+  ul.Ministry li:nth-child(1) figure{
+    margin-left: 11%;
+  }
+  .contentBox{
+    height: 221px;
+  }
+  
+
+  .imgBox figure {
+        margin: 0 0 0.75rem;
+    }
+ }
