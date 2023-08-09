@@ -748,6 +748,18 @@ a{
   background: linear-gradient(180deg, #fa7e29 0%, #F6682F 80%, #F6682F 100%);
 }
 
+.bg-breadcream{
+  background: #f8f9fa;
+  padding: 5px 0;
+}
+
+.bg-breadcream .breadcrumb{
+ margin-bottom: 0;
+}
+.bg-breadcream  .breadcrumb-item a{
+  color:#fa7e29;
+  font-weight: 600;
+}
 
 /* fancy Button */
 .fancy-button svg{
