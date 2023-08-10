@@ -229,6 +229,37 @@ ul.event-icon li::before{
     }
 /* tabs */
 
+/* contact us */
+
+.contact_inner{
+  background-color: #fff;
+  position: relative;
+  box-shadow: 20px 22px 44px #cccc;
+  border-radius: 25px;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+.contact_info_sec {
+  position: absolute;
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  right: 1px;
+  top: 18%;
+  height: 250px;
+  width: 320px;
+  padding: 40px 35px;
+  border-radius: 25px 0 0 25px;
+  background-color: rgba(2, 39, 89,0.8);
+}
+.address {
+  line-height: 1.5;
+}
+.bg-gray{
+  background-color: #f1f1f1;
+}
+/* contact us */
+
 @media (max-width: 575.98px) { 
     .projectNmae{
         font-size: 21px;
