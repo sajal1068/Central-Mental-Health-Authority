@@ -23,7 +23,7 @@
                             <span class="projectNmae">Central Mental Health Authority</span>
                         </li>
                         <li>
-                            <img src="assets/images/nhm.svg" class="img-fluid">
+                            <!-- <img src="assets/images/nhm.svg" class="img-fluid"> -->
                         </li>
                     </ul>
                 </div>
@@ -31,6 +31,7 @@
         </div>
     </header>
 
+    
     <nav class="navbar navbar-expand-lg  nav-bg">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -66,38 +67,63 @@
                 <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare (State Mental Health Authority) Rules, 2018.pdf" target="_blank">Mental Healthcare (State Mental Health Authority) Rules, 2018</a></li>              
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CMHE(MHA)
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="application.html">Application</a></li>
-                <li><a class="dropdown-item" href="javascript:void();">Establishment Registration</a></li> 
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="javascript:void();">SMHE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="javascript:void();">Form D</a>
-            </li>
+
+            <li class="nav-item dropdown" id="myDropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  MHE  </a>
+              <ul class="dropdown-menu">                
+                <li> <a class="dropdown-item" href="#"> CMHE(MHA) &raquo; </a>
+                  <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" href="application.html" >Application</a></li>
+                    <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li>
+                  </ul>
+                </li>
+                <li> <a class="dropdown-item" href="#"> SMHE </a></li>
+                <li> <a class="dropdown-item" href="#"> Form D </a></li>
+                </ul>
+              </li> 
+           
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 SMHA
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li>                          
+                <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Andhra Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Arunachal Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Assam</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Bihar</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Chhattisgarh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Goa</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Gujarat</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Himachal Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Jharkhand</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Karnataka</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Kerala</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Madhya Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Maharashtra</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Manipur</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Meghalaya</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Mizoram</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Nagaland</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Odisha</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Punjab</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Rajasthan</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Sikkim</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Tamil Nadu</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Telangana</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Tripura</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttar Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttarakhand</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">West Bengal</a></li>   
               </ul>
-            </li>
-
-           
+            </li>           
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contact Us
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Directory</a></li>
-                <li><a class="dropdown-item" href="location.html">Location</a></li>               
+                <li><a class="dropdown-item active" href="location.html">Location</a></li>               
               </ul>
             </li>             
           </ul>            
@@ -374,6 +400,41 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+
+document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
 
 
 
