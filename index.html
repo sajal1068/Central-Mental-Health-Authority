@@ -49,7 +49,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Introduction</a></li>
-                <li><a class="dropdown-item" href="#">Who's Who</a></li>                  
+                <li><a class="dropdown-item" href="whos-who.html">Who's Who</a></li>                  
               </ul>
             </li>              
             <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
                   </ul>
                 </li>
                 <li> <a class="dropdown-item" href="#"> SMHE </a></li>
-                <li> <a class="dropdown-item" href="#"> Form D </a></li>
+                <li> <a class="dropdown-item" href="assets/Form D Central Mental Health Establishment.docx"> Form D </a></li>
                 </ul>
               </li> 
            
@@ -131,7 +131,7 @@
       </div>
   </nav>
       <div class="clearfix"></div>
-    <section class="banner">
+    <section class="Homebanner">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -140,15 +140,15 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="assets/images/ajadi_banner.jpg" class="d-block w-100" alt="Ajadi Ka amrit">
+                <img src="assets/images/banner.jpg" class="d-block w-100" alt="Ajadi Ka amrit">
                 
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/images/mankibaat.jpg" class="d-block w-100" alt="Mann ki baat">
+                <img src="assets/images/banner.jpg" class="d-block w-100" alt="Mann ki baat">
                 
               </div>
               <div class="carousel-item">
-                <img src="assets/images/ajadi_banner.jpg" class="d-block w-100" alt="Ajadi Ka amrit">
+                <img src="assets/images/banner.jpg" class="d-block w-100" alt="Ajadi Ka amrit">
                
               </div>
             </div>
@@ -196,7 +196,7 @@
         <section class=" w-100 mt-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-5">
+                    <!-- <div class="col-md-6 col-lg-5">
                         <ul class="Ministry">
                             <li>
                                 <div class="imgBox">
@@ -246,7 +246,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="col-md-6 col-lg-7">
                       <div class="custom-tab">
@@ -334,8 +334,17 @@
                     </div>
                     <div class="col-md-8">
                         <h1 class="mainHeading">About mental health authority and who's who</h1>
-                        <p class="homePara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <p class="homePara">(1) The Central Authority shall—
+                          (a) register all mental health establishments under the control of the Central Government and maintain a register of all mental health establishments in the country based on information provided by all State Mental Health Authorities of registered establishments and compile update and publish (including online on the internet) a register of such establishments; 
                         </p>
+
+                        <ul class="objectiveSection">
+                          <li>
+                            <ul>
+                              <li8></li8>
+                            </ul>
+                          </li>
+                        </ul>
                     </div>
                 
                 </div>
@@ -437,7 +446,9 @@ if (window.innerWidth < 992) {
 // DOMContentLoaded  end
 
 
-
+$('.arrows').click(function () {
+      $(".contact_info_sec").toggleClass("moveclass", 1000);  
+});
     </script>
   </body>
 </html>
