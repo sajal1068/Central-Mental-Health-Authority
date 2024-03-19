@@ -1232,4 +1232,23 @@ ul.event-icon li::before{
 }
 
 
+.whos tr td:first-of-type,
+.whos tr th:first-of-type {
+  background: #CEF3CE;
+}
+
+.whos tr td:nth-child(2),
+.whos tr th:nth-child(2) {
+  background: #f7f7f7;
+}
+
+.whos tr td:nth-child(3),
+.whos tr th:nth-child(3) {
+  background: var(--lightcream);
+}
+
+.whos th,
+.curculars td {
+  border: 1px solid var(--green);
+}
 
