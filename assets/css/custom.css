@@ -1234,13 +1234,51 @@ ul.event-icon li::before{
 
 .whos tr td:first-of-type,
 .whos tr th:first-of-type {
-  background: #CEF3CE;
+  background: #e6f1f7;
+  text-align: center;
+  font-weight: 600;
 }
 
 .whos tr td:nth-child(2),
 .whos tr th:nth-child(2) {
   background: #f7f7f7;
+  text-align: center;
 }
+.whos tr th, .whos tr td{
+  border: 1px solid #2196f3;
+  border: 1px solid #bfd2e1d1;
+}
+.whos tr td:nth-child(3),
+.whos tr th:nth-child(3) {
+  background: #f7f7f7;
+  text-align: left;
+}
+.whos tr td:nth-child(3) {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.whos tr td:nth-child(4) {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.whos tr td:nth-child(4),
+.whos tr th:nth-child(4) {
+  background: #f7f7f7;
+  text-align: left;
+}
+
+
+.whos tr td:nth-child(2){
+  padding: 5px 15px;
+}
+
+.whos tr td:nth-child(2) p{
+  line-height: 1.5;
+  font-size: 0.85rem;
+}
+
 
 .whos tr td:nth-child(3),
 .whos tr th:nth-child(3) {
@@ -1251,4 +1289,6 @@ ul.event-icon li::before{
 .curculars td {
   border: 1px solid var(--green);
 }
-
+.curculars th, .curculars td {
+  border: 1px solid var(--green);
+}
