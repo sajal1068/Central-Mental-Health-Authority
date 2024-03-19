@@ -226,7 +226,7 @@ ul.event-icon li::before{
           margin-right: 10px;
       }
       .custom-tab{
-        height: 457px;
+        height: 410px;
       }
 
       ul.event-icon {        
@@ -821,7 +821,7 @@ ul.event-icon li::before{
 
   .mainHeading{
     position: relative;
-    font-size: 2.5rem;
+    font-size: 2.05rem;
     font-weight: 600;
     color:#132573;
     line-height: 1.2;
@@ -1160,6 +1160,7 @@ ul.event-icon li::before{
 
 .objectiveSection{
   background-color:var(--lightyellow02) ;
+  background-color: #e6f1f7;
   width: 100%;
   padding: 45px 25px 25px;
 
@@ -1210,13 +1211,13 @@ ul.event-icon li::before{
     position: relative;
     width: 100%;
     color: #323232;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 1.6px;
     padding-left: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     padding-right: 25px;;
 }
 .objectiveSection li li::after{
