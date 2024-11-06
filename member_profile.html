@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Central Mental Health Authority</title>
+  </head>
+  <style>
+    /* Container for profiles */
+    #members-profile {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Main Section Header */
+    #members-profile h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #4CAF50;
+    }
+
+    /* Profile Container */
+    .profile {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Profile Name and Title */
+    .profile h3 {
+      font-size: 24px;
+      color: #2C3E50;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    /* Profile Position */
+    .profile p strong {
+      font-weight: bold;
+    }
+
+    /* Paragraph styling */
+    .profile p {
+      line-height: 1.6;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Layout */
+    @media (min-width: 768px) {
+      .profile {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .profile h3 {
+        flex-basis: 100%;
+      }
+      .profile p {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+    <header class="bdr-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="logosection">
+                        <li>
+                            <img src="assets/images/Ministry_of_Health_India.svg" class="img-fluid">
+                        </li>
+                        <li>
+                            <!-- <img src="" class="img-fluid"> -->
+                            <span class="projectNmae">Central Mental Health Authority</span>
+                        </li>
+                        <li>
+                            <!-- <img src="assets/images/nhm.svg" class="img-fluid"> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg  nav-bg">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
+                  <li><a class="dropdown-item" href="member_profile.html">CMHA Members</a></li>                   
+                </ul>
+              </li>              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Act and Rules
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="assets/pdf/Rights of Persons with Mental Illness_0.pdf" target="_blank">Rights of Persons with Mental Illness_0</a></li>
+                  <!-- <li><a class="dropdown-item" href="assets/pdf/NMHP detail.pdf" target="_blank">NMHP detail</a></li>    -->
+                  <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare SMHA Rules_0.pdf" target="_blank">Mental Healthcare SMHA Rules_0</a></li>               
+                  <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare CMHA and MHRB Rules 2018_0.pdf" target="_blank">Mental Healthcare CMHA and MHRB Rules 2018_0</a></li>               
+                  <!-- <li><a class="dropdown-item" href="assets/pdf/Manpower scheme B.pdf" target="_blank">Manpower scheme B</a></li>                -->
+                  <!-- <li><a class="dropdown-item" href="assets/pdf/Final Draft Rules MHC Act, 2017 (1).pdf" target="_blank">Final Draft Rules MHC Act, 2017 (1)</a></li>                -->
+                  <li><a class="dropdown-item" href="assets/pdf/Central Mental-Health-Regulation 2020.pdf" target="_blank">Central Mental-Health-Regulation 2020</a></li>               
+                  <li><a class="dropdown-item" href="assets/pdf/Act coming into force on 29.5.2018.pdf" target="_blank">Act coming into force on 29.5.2018</a></li>   
+                  <li><a class="dropdown-item" href="assets/pdf/Mental Health Care (Central Mental Health Authority and Mental Health Review Boards) Rules, 2018.pdf" target="_blank">Mental Health Care (Central Mental Health Authority and Mental Health Review Boards) Rules, 2018</a></li>
+                  <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare (Rights of Persons with Mental Illness) Rules, 2018.pdf" target="_blank">Mental Healthcare (Rights of Persons with Mental Illness) Rules, 2018</a></li>   
+                  <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare (State Mental Health Authority) Rules, 2018.pdf" target="_blank">Mental Healthcare (State Mental Health Authority) Rules, 2018</a></li>              
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CMHE(MHA)
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="application.html">Application</a></li>
+                  <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li> 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="javascript:void();">SMHE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="javascript:void();">Form D</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SMHA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li>                          
+                </ul>
+              </li>
+
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Directory</a></li>
+                  <li><a class="dropdown-item" href="location.html">Location</a></li>               
+                </ul>
+              </li>             
+            </ul>            
+          </div>
+        </div>
+      </nav>
+  <div class="clearfix"></div>
+  <section id="members-profile">
+    <h2>MEMBERS’ PROFILE</h2>
+
+    <!-- Profile 1 -->
+    <div class="profile">
+      <h3>Dr. Kamlesh Kumar Sahu [Ph.D., M.Phil. PSW, MA, BA, FIASP]</h3>
+      <p><strong>Position:</strong> Associate Professor, Department of Psychiatry & In-Charge of MSW, Government Medical College & Hospital, Chandigarh (GMCH)</p>
+      <p>
+        Dr. Kamlesh Kumar Sahu holds a Master of Philosophy in Psychiatric Social Work from the Central Institute of Psychiatry, Ranchi, and a PhD from the University of Calcutta. With over 18 years of dedicated involvement in the realm of Mental Health, he possesses extensive expertise. His journey encompasses mentoring postgraduate trainees alongside coordinating counselling, mental health, and psychosocial rehabilitation initiatives. Dr. Sahu has contributed significantly to the field through his research engagements and presentations at numerous national and international conferences, and boasts an impressive tally of fifty publications. His expertise and commitment to advancing the field of mental health and applied practice position him as a key figure in the domain.
+      </p>
+    </div>
+
+    <!-- Profile 2 -->
+    <div class="profile">
+      <h3>Dr. Mythili Hazarika [M.Phil., PhD]</h3>
+      <p><strong>Position:</strong> Associate Professor, Clinical Psychology, Gauhati Medical College and Hospital, Assam</p>
+      <p>
+        Dr. Mythili Hazarika has more than 20 years of experience in mental health care and services under the Health and Family Welfare Department of the Government of Assam. She holds an MPhil in Clinical Psychology from NIMHANS, a PhD from Guwahati University, and post-doctoral training in Epidemiology and Public Health from the University of Florida, USA. Her career has been marked by significant contributions to community mental health programs.
+      </p>
+      <p>
+        She is the President of SoMHiL (Society for Mental Health in Low and Middle-Income Countries) and is actively involved in over 60 regional, national, and international publications, including edited books and manuals on mental health. Dr. Hazarika has conducted more than 300 workshops, has been a guest speaker at over 700 seminars and conferences, and frequently appears on television and radio to share knowledge on mental health issues. Her research projects focus on substance abuse, neurocognitive functions, and early childhood mental health.
+      </p>
+      <p>
+        Dr. Hazarika is also the founder of "MYND: Heal to Evolve," an institute that focuses on clinical, academic, and research aspects of mental health 
+      </p>
+    </div>
+  </section>
+
+   <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="footerLogo">
+                        <li>
+                            <a href="">
+                                <img src="assets/images/NIC-logo.svg" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/Digital.svg" class="img-fluid">
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <article class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Website contents are being maintained by Ministry of Health and Family Welfare, Government of India.
+                            Website has been designed, developed, maintained and hosted by <a href="https://www.nic.in/" target="_blank">  National Informatics Centre (NIC) </a> </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+    <a id="button">
+        <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.21 19.29"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_1-2"><path class="cls-1" d="M2.5,19.29c-.64,0-1.28-.24-1.77-.73-.98-.98-.98-2.56,0-3.54L14.76,.99c1.32-1.32,3.63-1.32,4.95,0l13.76,13.76c.98,.98,.98,2.56,0,3.54-.98,.98-2.56,.98-3.54,0L17.24,5.59,4.27,18.55c-.49,.49-1.13,.73-1.77,.73Z"/></g></svg>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var btn = $('#button');
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
+    </script>
+</body>
+</html>

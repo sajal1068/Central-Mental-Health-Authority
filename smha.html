@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Central Mental Health Authority</title>
+    <style>
+
+     
+        .smhaBox{
+          width: 100%;
+          box-sizing: border-box;
+          transition: all 0.5s ease 0s;
+          padding: 15px 15px;
+          border: solid #e8e8e8 1px;
+          border-radius: 4px;
+          margin-bottom: 15px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+        }
+        .smhaBox::after{
+          content: '';
+          position: absolute;
+          background: url(assets/images/link.svg);
+          width: 20px;
+          height: 20px;
+          right: 10px;
+          top:15px;
+        }
+        .smhaBox strong{
+          font-weight: 500;
+          color: var(--gray);
+          padding: 5px 0;  
+         line-height: 1.3;
+         font-size: 0.99rem;              
+        } 
+        .line{
+          position: relative;
+          width: calc(100% - 35px);
+          height: 0.5px;
+          background: var(--gray);opacity: 0.1;
+          margin: auto;
+          margin: 10px auto 5px;
+        }          
+        .smhaBox:hover strong{         
+          color: var(--orenge);         
+        }   
+        .smhaBox strong::after{
+          content: '';
+        }    
+        .smhaBox:hover{
+            color: var(--orenge);
+            background: #fff;
+            box-shadow: 2px 2px 15px 0 rgba(135,135,135, 0.4);
+            cursor: pointer;
+            border-color: var(--navbghover);
+            /* border-color: rgba(250,126,41,0.4); */
+        }
+        .height-30{
+          max-height: 80px;
+        }
+        .smhaBox li:nth-child(2){
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+        .link{
+          width: 100%;
+          position: relative;
+        }
+        .link span::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          border-radius: 5px;
+          height: 0.05em;
+          bottom: 0;
+          left: 0;
+          background: var(--orenge);
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        .smhaBox:hover .link span::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <header class="bdr-top">
+      <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="logosection">
+                        <li>
+                            <img src="assets/images/Ministry_of_Health_India.svg" class="img-fluid">
+                        </li>
+                        <li>
+                            <!-- <img src="" class="img-fluid"> -->
+                            <span class="projectNmae">Central Mental Health Authority</span>
+                        </li>
+                        <li>
+                            <!-- <img src="assets/images/nhm.svg" class="img-fluid"> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <nav class="navbar navbar-expand-lg  nav-bg">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
+                <li><a class="dropdown-item" href="whos-who.html">CMHA Members</a></li>                  
+              </ul>
+            </li>              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Act and Rules
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare Act, 2017_0.pdf" target="_blank">Mental healthcare Act, 2017</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/Act coming into force on 29.5.2018.pdf" target="_blank">Mental Healthcare Act Coming Into Effect on 29.05.2018</a></li> 
+                <li><a class="dropdown-item" href="assets/pdf/Mental Health Care (Central Mental Health Authority and Mental Health Review Boards) Rules, 2018.pdf" target="_blank">Mental Health Care (Central Mental Health Authority and Mental Health Review Boards) Rules, 2018</a></li>  
+                <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare (Rights of Persons with Mental Illness) Rules, 2018.pdf" target="_blank">Mental Healthcare (Rights of Persons with Mental Illness) Rules, 2018</a></li> 
+                <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare (State Mental Health Authority) Rules, 2018.pdf" target="_blank">Mental Healthcare (State Mental Health Authority) Rules, 2018</a></li> 
+                <li><a class="dropdown-item" href="javascript:void();" >Amendment in Rule 17 of the Mental Healthcare (Central Mental Health Authority and Mental Health Review Boards) Rules, 2018</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/Central Mental-Health-Regulation 2020.pdf" target="_blank">The Mental Healthcare (Central Mental Health Authority) Regulations, 2020</a></li>  
+                <li><a class="dropdown-item" href="assets/pdf/2nd CMHA Members Notification.pdf" target="_blank">Gazette notification for Members of CMHA</a></li>  
+                <!-- <li><a class="dropdown-item" href="assets/pdf/Rights of Persons with Mental Illness_0.pdf" target="_blank">Rights of Persons with Mental Illness_0</a></li>                  
+                <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare SMHA Rules_0.pdf" target="_blank">Mental Healthcare SMHA Rules_0</a></li>                -->
+                <!-- <li><a class="dropdown-item" href="assets/pdf/Mental Healthcare CMHA and MHRB Rules 2018_0.pdf" target="_blank">Mental Healthcare CMHA and MHRB Rules 2018_0</a></li>   -->                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown" id="myDropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  MHE  </a>
+              <ul class="dropdown-menu">                
+                <li> <a class="dropdown-item" href="#"> CMHE(MHA) &raquo; </a>
+                  <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" href="application.html" >Application</a></li>
+                    <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li>
+                  </ul>
+                </li>
+                <li> <a class="dropdown-item" href="#"> SMHE </a></li>
+                <li> <a class="dropdown-item" href="assets/Form D Central Mental Health Establishment.docx"> Form D </a></li>
+                </ul>
+              </li> 
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SMHA
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Andhra Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Arunachal Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Assam</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Bihar</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Chhattisgarh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Goa</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Gujarat</a></li> 
+                <li><a class="dropdown-item" href="https://hpsmha.hp.gov.in/" target="_blank">Himachal Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Jharkhand</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Karnataka</a></li> 
+                <li><a class="dropdown-item" href="http://www.ksmha.org/" target="_blank">Kerala</a></li>  
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Madhya Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Maharashtra</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Manipur</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Meghalaya</a></li> 
+                <li><a class="dropdown-item" href="https://smha.mizoram.gov.in/" target="_blank">Mizoram</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Nagaland</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Odisha</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Punjab</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Rajasthan</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Sikkim</a></li> 
+                <li><a class="dropdown-item" href="http://tnsmha.in/" target="_blank">Tamil Nadu</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Telangana</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Tripura</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttar Pradesh</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttarakhand</a></li> 
+                <li><a class="dropdown-item" href="javscript:void();" target="_blank">West Bengal</a></li>   
+              </ul>
+            </li>           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Directory</a></li>
+                <li><a class="dropdown-item active" href="location.html">Location</a></li>               
+              </ul>
+            </li>             
+          </ul>            
+        </div>
+      </div>
+  </nav>
+      <div class="clearfix"></div>
+  
+
+    <main>
+
+        <section class="bg-breadcream">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>                              
+                              <li class="breadcrumb-item active" aria-current="page">SMHA</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+      <section class=" w-100 py-5">
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="mainHeading">States</div>
+            </div>  
+         
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Andhra_Pradesh.svg" class="img-fluid d-block mx-auto height-30" alt="Andhra Pradesh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Andhra Pradesh</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/logo_of_Arunachal_Pradesh.svg" class="img-fluid d-block mx-auto height-30" alt="Arunachal Pradesh">
+                  <div class="line"></div>                  
+                  <strong class="link"><span>Arunachal Pradesh</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Assam.svg" class="img-fluid d-block mx-auto height-30" alt="Assam">
+                  <div class="line"></div>
+                  <strong class="link"><span>Assam</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Bihar.svg" class="img-fluid d-block mx-auto height-30" alt="Bihar">
+                  <div class="line"></div>
+                  <strong class="link"><span>Bihar</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Chhattisgarh.svg" class="img-fluid d-block mx-auto height-30" alt="Chhattisgarh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Chhattisgarh</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Goa.svg" class="img-fluid d-block mx-auto height-30" alt="Goa">
+                  <div class="line"></div>
+                  <strong class="link"><span>Goa</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_Of_Gujarat.svg" class="img-fluid d-block mx-auto height-30" alt="Gujarat">
+                  <div class="line"></div>
+                  <strong class="link"><span>Gujarat</span></strong>  
+                </div>
+              </a>                
+            </div>    
+            
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Haryana.svg" class="img-fluid d-block mx-auto height-30" alt="Haryana">
+                  <div class="line"></div>
+                  <strong class="link"><span>Haryana</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+           
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="https://hpsmha.hp.gov.in/" target="_blank">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_Himachal_Pradesh.svg" class="img-fluid d-block mx-auto height-30" alt="Himachal Pradesh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Himachal Pradesh</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_Jharkhand.svg" class="img-fluid d-block mx-auto height-30" alt="Jharkhand">
+                  <div class="line"></div>
+                  <strong class="link"><span>Jharkhand</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Karnataka.svg" class="img-fluid d-block mx-auto height-30" alt="Karnataka">
+                  <div class="line"></div>
+                  <strong class="link"><span>Karnataka</span></strong>  
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Kerala.svg" class="img-fluid d-block mx-auto height-30" alt="Kerala">
+                  <div class="line"></div>
+                  <strong class="link"><span>Kerala</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Madhya_Pradesh.svg" class="img-fluid d-block mx-auto height-30" alt="Madhya Pradesh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Madhya Pradesh</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Maharashtra.svg" class="img-fluid d-block mx-auto height-30" alt="Maharashtra">
+                  <div class="line"></div>
+                  <strong class="link"><span>Maharashtra</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Kanglasa.svg" class="img-fluid d-block mx-auto height-30" alt="Manipur">
+                  <div class="line"></div>
+                  <strong class="link"><span>Manipur</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Meghalaya.svg" class="img-fluid d-block mx-auto height-30" alt="Meghalaya">
+                  <div class="line"></div>
+                  <strong class="link"><span>Meghalaya</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="https://smha.mizoram.gov.in/" target="_blank">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Mizoram.svg" class="img-fluid d-block mx-auto height-30" alt="Mizoram">
+                  <div class="line"></div>
+                  <strong class="link"><span>Mizoram</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Nagaland.svg" class="img-fluid d-block mx-auto height-30" alt="Nagaland">
+                  <div class="line"></div>
+                  <strong class="link"><span>Nagaland</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Odisha.svg" class="img-fluid d-block mx-auto height-30" alt="Odisha">
+                  <div class="line"></div>
+                  <strong class="link"><span>Odisha</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Punjab.svg" class="img-fluid d-block mx-auto height-30" alt="Punjab">
+                  <div class="line"></div>
+                  <strong class="link"><span>Punjab</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Rajasthan.png" class="img-fluid d-block mx-auto height-30" alt="Rajasthan">
+                  <div class="line"></div>
+                  <strong class="link"><span>Rajasthan</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Sikkim.svg" class="img-fluid d-block mx-auto height-30" alt="Sikkim">
+                  <div class="line"></div>
+                  <strong class="link"><span>Sikkim</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_TamilNadu.svg" class="img-fluid d-block mx-auto height-30" alt="Tamil Nadu">
+                  <div class="line"></div>
+                  <strong class="link"><span>Tamil Nadu</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Telangana.svg" class="img-fluid d-block mx-auto height-30" alt="Telangana">
+                  <div class="line"></div>
+                  <strong class="link"><span>Telangana</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Tripura.svg" class="img-fluid d-block mx-auto height-30" alt="Tripura">
+                  <div class="line"></div>
+                  <strong class="link"><span>Tripura</span></strong> 
+                </div>
+              </a>                
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Uttar_Pradesh.svg" class="img-fluid d-block mx-auto height-30" alt="Uttar Pradesh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Uttar Pradesh</span></strong> 
+                </div>
+              </a>                
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Uttarakhand.svg" class="img-fluid d-block mx-auto height-30" alt="Uttarakhand">
+                  <div class="line"></div>
+                  <strong class="link"><span>Uttarakhand</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-12">
+              <div class="mainHeading">Union Territories</div>
+            </div> 
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_f_Andaman_and_Nicobar_Islands.png" class="img-fluid d-block mx-auto height-30" alt="Andaman and Nicobar Islands">
+                  <div class="line"></div>
+                  <strong class="link"><span>Andaman and Nicobar Islands</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Chandigarh.svg" class="img-fluid d-block mx-auto height-30" alt="Chandigarh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Chandigarh</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Dadra_and_Nagar_Haveli_and_Daman_and_Diu.svg" class="img-fluid d-block mx-auto height-30" alt="Dadra and Nagar Haveli and Daman and Diu">
+                  <div class="line"></div>
+                  <strong class="link"><span>Dadra and Nagar Haveli and Daman and Diu</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Delhi.svg" class="img-fluid d-block mx-auto height-30" alt="Delhi">
+                  <div class="line"></div>
+                  <strong class="link"><span>Delhi</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Jammu_and_Kashmir.svg" class="img-fluid d-block mx-auto height-30" alt="Jammu and Kashmir">
+                  <div class="line"></div>
+                  <strong class="link"><span>Jammu and Kashmir</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_of_Jammu_and_Kashmir.svg" class="img-fluid d-block mx-auto height-30" alt="Ladakh">
+                  <div class="line"></div>
+                  <strong class="link"><span>Ladakh</span></strong> 
+                </div>
+              </a>                
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logo_Lakshadweep.png" class="img-fluid d-block mx-auto height-30" alt="Lakshadweep">
+                  <div class="line"></div>
+                  <strong class="link"><span>Lakshadweep</span></strong> 
+                </div>
+              </a>                
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <a href="javscript:void();">
+                <div class="smhaBox">
+                  <img src="assets/images/states/Logot_of_Puducherry.png" class="img-fluid d-block mx-auto height-30" alt="Puducherry">
+                  <div class="line"></div>
+                  <strong class="link"><span>Puducherry</span></strong> 
+                </div>
+              </a>                
+            </div>
+
+            
+            
+
+            
+
+            
+
+
+            
+            
+
+            
+
+
+            
+
+            
+
+     
+
+           
+           
+          </div>
+        </div>
+      </section>
+          
+       
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="footerLogo">
+                        <li>
+                            <a href="">
+                                <img src="assets/images/NIC-logo.svg" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/Digital.svg" class="img-fluid">
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <article class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Website contents are being maintained by Ministry of Health and Family Welfare, Government of India.
+                            Website has been designed, developed, maintained and hosted by <a href="https://www.nic.in/" target="_blank">  National Informatics Centre (NIC) </a> </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+    <a id="button">
+        <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.21 19.29"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_1-2"><path class="cls-1" d="M2.5,19.29c-.64,0-1.28-.24-1.77-.73-.98-.98-.98-2.56,0-3.54L14.76,.99c1.32-1.32,3.63-1.32,4.95,0l13.76,13.76c.98,.98,.98,2.56,0,3.54-.98,.98-2.56,.98-3.54,0L17.24,5.59,4.27,18.55c-.49,.49-1.13,.73-1.77,.73Z"/></g></svg>
+    </a>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>    
+  </body>
+</html>
