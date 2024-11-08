@@ -230,7 +230,7 @@ ul.event-icon li::before{
           margin-right: 10px;
       }
       .custom-tab{
-        height: 408px;
+        height: 366px;
       }
 
       ul.event-icon {        
@@ -662,6 +662,7 @@ ul.event-icon li::before{
     color: #f1f1f1;
     font-size: 14px;
     font-weight: 300;
+    line-height: 1.5;
   }
 
   .copyright p a{
@@ -825,7 +826,7 @@ ul.event-icon li::before{
 
   .mainHeading{
     position: relative;
-    font-size: 2.05rem;
+    font-size: 1.85rem;
     font-weight: 600;
     color:#132573;
     line-height: 1.2;
@@ -1201,7 +1202,7 @@ ul.event-icon li::before{
 }
 ul.introDetails {
   font-weight: 400;
-  padding-left: 16px;
+  padding-left: 10px;
 }
 ul.introDetails ::marker {
   content: ">";
@@ -1214,9 +1215,9 @@ ul.introDetails li {
     padding-top: 0.65em;
     cursor: default;
     transition: color 0.4s;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--gray);
     font-size: 0.99rem;
 }
@@ -1233,6 +1234,17 @@ ul.introDetails li {
   font-weight: 500;
   font-style: italic;
 }
+.font-300{
+  font-weight: 300;
+}
+.font-500{
+  font-weight: 500;
+}
+.text-justify{
+  text-align: justify;
+}
+
+
 ul.introDetails li:hover::marker {
   font-weight: 700;
 }
@@ -1318,12 +1330,14 @@ p.indent{
   clear: both;
   border: solid 1px transparent;
   border: solid 1px #f4f4f4;
+  border: 1px solid #dae2e6;
 }
 
 .profile-details{
   width: 100%;
   height: auto;
   border: solid 1px #f4f4f4;
+ 
   margin-bottom: 15px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1364,12 +1378,14 @@ p.indent{
 p.about-members{
   font-size: 0.99rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.9;
   padding: 5px 15px 25px;
+  text-align: justify;
 }
 
 .profile:hover{
   border: solid 1px #f4f4f4;
+  border: 1px solid #dae2e6;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -1378,6 +1394,7 @@ p.about-members{
   height: 320px;
   object-fit: cover;
   object-position: top;
+  border-radius: 8px!important;
 }
 .profile figcaption{
   padding: 15px 0px 10px 5px;
@@ -1389,15 +1406,15 @@ figcaption .name{
   color: var(--navbg);
 }
 figcaption .degination{
-  font-size: 1.05rem;
+  font-size: 0.99rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: var(--navbg);
+  line-height: 1.6;
+  color: var(--darkBlue);
   margin: 10px 0 10px 0px;
 }
 
 figcaption .btn-view {
-  background-color: var(--green); 
+  /* background-color: var(--green); 
   border: none;
   color: white;
   padding: 7px 25px;
@@ -1407,8 +1424,42 @@ figcaption .btn-view {
   font-size: 0.95rem;
   margin: 10px 0 5px;
   cursor: pointer;
-  border-radius: 18px;
+  border-radius: 18px; */
+
+/* CSS */
+
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 2.4em 0.7em 2.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; 
+
 }
+
+
+
+figcaption .btn-view:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+figcaption .btn-view:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+
+
 .pad-about{
   padding: 0px 15px;
 }
@@ -1417,4 +1468,12 @@ figcaption .btn-view:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
- 
+
+figcaption small{
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 5px 10px 0 0;
+  line-height: 1.6;
+  color: var(--gray);
+}
