@@ -983,7 +983,7 @@ ul.event-icon li::before{
   right: 10px;
   z-index: -1;
   border-radius: 2em;
-  filter: blur(14px) brightness(0.9);
+  /* filter: blur(14px) brightness(0.9); */
   transform-style: preserve-3d;
   transition: all 0.3s ease-out;
 }
@@ -1205,8 +1205,11 @@ ul.introDetails {
   padding-left: 10px;
 }
 ul.introDetails ::marker {
-  content: ">";
+/* content: ">"; */
+  content: "  \00bb";
   color: var(--blue);
+  font-size: 21px;
+  line-height: 0;
 }
 ul.introDetails li {
     position: relative;
@@ -1254,7 +1257,7 @@ ul.introDetails li:hover::after {
 }
 ul.introDetails li strong{
   color: var(--blue);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.0rem;
 }
 p.indent{
