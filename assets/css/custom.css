@@ -1378,14 +1378,21 @@ p.indent{
 .profile-details ul ul li{
   width: 100%;
 }
-p.about-members{
-  font-size: 0.99rem;
-  font-weight: 300;
-  line-height: 1.9;
+
+.about-members{
+  
   padding: 5px 15px 25px;
   text-align: justify;
 }
-
+.about-members p{
+  font-size: 0.99rem;
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+p.indent{
+  text-indent: 50px;
+}
 .profile:hover{
   border: solid 1px #f4f4f4;
   border: 1px solid #dae2e6;

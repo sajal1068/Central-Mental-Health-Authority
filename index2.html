@@ -152,7 +152,11 @@
             height: 100%;
           }
         }
-
+        @media (min-width: 1200px) {
+            .custom-tab {
+                height: 469px;
+            }
+        }
     </style>
   </head>
   <body>
@@ -194,95 +198,96 @@
           </li>
         </ul>
       </section>
-    <nav class="navbar navbar-expand-lg  nav-bg">
-      <div class="container">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" ></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                About Us
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
-                <li><a class="dropdown-item" href="whos-who.html">CMHA Members</a></li>                  
-              </ul>
-            </li>   
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="act-and-rules.html">Act & Rules</a>
-            </li>           
-            
-            <li class="nav-item dropdown" id="myDropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  MHE  </a>
-              <ul class="dropdown-menu">                
-                <li> <a class="dropdown-item" href="#"> CMHE(MHA) &raquo; </a>
-                  <ul class="submenu dropdown-menu">
-                    <li><a class="dropdown-item" href="application.html" >Application</a></li>
-                    <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li>
-                  </ul>
-                </li>
-                <li> <a class="dropdown-item" href="#"> SMHE </a></li>
-                <li> <a class="dropdown-item" href="assets/Form D Central Mental Health Establishment.docx"> Form D </a></li>
-                </ul>
-              </li> 
+      <nav class="navbar navbar-expand-lg  nav-bg">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="smha.html">SMHA</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
-           
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                SMHA
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Andhra Pradesh</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Arunachal Pradesh</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Assam</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Bihar</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Chhattisgarh</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Goa</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Gujarat</a></li> 
-                <li><a class="dropdown-item" href="https://hpsmha.hp.gov.in/" target="_blank">Himachal Pradesh</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Jharkhand</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Karnataka</a></li> 
-                <li><a class="dropdown-item" href="http://www.ksmha.org/" target="_blank">Kerala</a></li>  
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Madhya Pradesh</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Maharashtra</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Manipur</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Meghalaya</a></li> 
-                <li><a class="dropdown-item" href="https://smha.mizoram.gov.in/" target="_blank">Mizoram</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Nagaland</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Odisha</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Punjab</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Rajasthan</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Sikkim</a></li> 
-                <li><a class="dropdown-item" href="http://tnsmha.in/" target="_blank">Tamil Nadu</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Telangana</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Tripura</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttar Pradesh</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttarakhand</a></li> 
-                <li><a class="dropdown-item" href="javscript:void();" target="_blank">West Bengal</a></li>   
-              </ul>
-            </li>            -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact Us
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Directory</a></li>
-                <li><a class="dropdown-item active" href="location.html">Location</a></li>               
-              </ul>
-            </li>             
-          </ul>            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
+                  <li><a class="dropdown-item" href="whos-who.html">CMHA Members</a></li>                  
+                </ul>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="act-and-rules.html">Act & Rules</a>
+              </li>            
+             
+  
+              <li class="nav-item dropdown" id="myDropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  MHE  </a>
+                <ul class="dropdown-menu">                
+                  <li> <a class="dropdown-item" href="#"> CMHE(MHA) &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="application.html" >Application</a></li>
+                      <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li>
+                    </ul>
+                  </li>
+                  <li> <a class="dropdown-item" href="#"> SMHE </a></li>
+                  <li> <a class="dropdown-item" href="assets/Form D Central Mental Health Establishment.docx"> Form D </a></li>
+                  </ul>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="smha.html">SMHA</a>
+                </li>
+             
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SMHA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Andhra Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Arunachal Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Assam</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Bihar</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Chhattisgarh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Goa</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Gujarat</a></li> 
+                  <li><a class="dropdown-item" href="https://hpsmha.hp.gov.in/" target="_blank">Himachal Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Jharkhand</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Karnataka</a></li> 
+                  <li><a class="dropdown-item" href="http://www.ksmha.org/" target="_blank">Kerala</a></li>  
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Madhya Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Maharashtra</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Manipur</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Meghalaya</a></li> 
+                  <li><a class="dropdown-item" href="https://smha.mizoram.gov.in/" target="_blank">Mizoram</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Nagaland</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Odisha</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Punjab</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Rajasthan</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Sikkim</a></li> 
+                  <li><a class="dropdown-item" href="http://tnsmha.in/" target="_blank">Tamil Nadu</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Telangana</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Tripura</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttar Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttarakhand</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">West Bengal</a></li>   
+                </ul>
+              </li>            -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Directory</a></li>
+                  <li><a class="dropdown-item active" href="location.html">Location</a></li>               
+                </ul>
+              </li>             
+            </ul>            
+          </div>
         </div>
-      </div>
-  </nav>
+      </nav>
 
   
       <div class="clearfix"></div>
@@ -334,7 +339,7 @@
                 </div>
                 <div class="col-lg-9">
                     <h1 class="mainHeading">About Central Mental Health Authority</h1>
-                    <p class="homePara">Central mental Health authority is set up under the Mental Health Care Act,2017 to advise the Central Government on all matters relating to mental healthcare and services. It performs the functions of  registering all mental health establishments under the control of the Central Government, and developing quality and service provision norms for them and supervising all such mental health establishments. It is also entrusted with training of all persons including law enforcement officials, mental health professionals and other health professionals about the provisions and implementation of this Act. 
+                    <p class="homePara">The Central Mental Health Authority is an autonomous body established by the Indian government under the Mental Healthcare Act, 2017, to oversee and regulate mental health service provisions across the country. Its mission is to ensure quality mental healthcare, shape mental health policy regulations, and provide training to stakeholders. The CMHA is led by a Chairperson (Additional Secretary, MoHFW) and includes a diverse team of ex-officio and non-official members, including senior government officials, mental health professionals, directors of national institutes, and individuals with lived experiences of mental illness. It also operates a Secretariat managed by a CEO, responsible for administration, program implementation, and financial oversight. The CMHA advocates for mental health awareness, promotes quality care, and advocates the rights of individuals with mental healthcare needs. 
                     </p>
                  
                 </div>
@@ -589,7 +594,7 @@ New Delhi- 110001
                     <div class="col-md-4">
                         <h6>Important Link</h6>
                         <ul class="footerLink">
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
                             <li><a href="#">Disclaimer</a></li>
                             <li><a href="#">Terms and Conditions</a></li>
                             <li><a href="#">Copyright Policy</a></li>
