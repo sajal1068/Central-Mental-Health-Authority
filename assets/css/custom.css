@@ -1487,3 +1487,158 @@ figcaption small{
   line-height: 1.6;
   color: var(--gray);
 }
+
+
+
+/* accrodian */
+.accordionTitle {
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.accordionIcon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+
+.accordionIcon::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: solid var(--deepsafran) 1px;
+  top: -13px;
+  left: -6px;
+}
+
+.accordionIcon .line-01,
+.accordionIcon .line-02 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background-color: var(--deepsafran);
+  transition: 0.3s;
+}
+
+.accordionIcon .line-02 {
+  transform: rotate(90deg);
+}
+
+.accordionContent {
+  display: none;
+  border-top: #747171 solid 0.5px;
+}
+
+.accordion--open .line-02 {
+  transform: rotate(0deg);
+}
+
+/* end Required CSS */
+
+
+.accordion {
+  margin-top: -1px;
+  border-top: 1px solid var(--deepsafran);
+  border-bottom: 1px solid var(--deepsafran);
+  counter-increment: counter 1;
+
+  background: #f7f7f7;
+  box-sizing: border-box;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.accordionTitle {
+  padding: 20px 25px;
+  font-size: 1.05rem;
+  color: var(--navbg);
+  transition: 0.2s;
+  font-weight: 600;
+  position: relative;
+}
+
+.accordionTitle::before {
+  position: absolute;
+  content: counter(counter) ". ";
+  left: 0;
+  color: var(--deepsafran);
+}
+
+.accordionContent {
+  padding: 24px 16px 16px;
+  background: beige;
+}
+
+.accordionContent p {
+  margin: 0 0 16px;
+  color: #555;
+  font-size: 0.99rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* .accordionTitle:hover {
+    background-color: #2986e2;
+    color: #fff;
+  } */
+
+.accordionTitle:hover .line-01,
+.accordionTitle:hover .line-02 {
+  background-color: #FFAE00;
+}
+
+.accordion--open .accordionTitle {
+  /* background-color: #2986e2; */
+  color: var(--green);
+}
+
+.accordion--open .line-01,
+.accordion--open .line-02 {
+  background-color: #fff;
+  background-color: #FFAE00;
+}
+
+.accordionContent ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.accordionContent li {
+  position: relative;
+  width: 100%;
+  color: #323232;
+  font-size: 0.99rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.0px;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  padding-right: 25px;
+  counter-reset: li;
+}
+
+.accordionContent li::before {
+  counter-increment: section;
+  content: counter(li) ": ";
+}
+
+
+.accordionContent li::after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 15px;
+  background: url(../images/listArrow.svg)no-repeat;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+}
