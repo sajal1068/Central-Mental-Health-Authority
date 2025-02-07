@@ -11,7 +11,7 @@
   <body>
     
     <header class="bdr-top">
-        <div class="container-fluid">
+      <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="logosection">
@@ -31,6 +31,7 @@
         </div>
     </header>
 
+    
     <nav class="navbar navbar-expand-lg  nav-bg">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -40,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +49,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
-                <li><a class="dropdown-item" href="whos-who.html">CMHA Members</a></li>                  
+                <li><a class="dropdown-item active" href="whos-who.html">CMHA Members</a></li>                  
               </ul>
             </li>              
             <li class="nav-item dropdown">
@@ -72,11 +73,10 @@
 
             <li class="nav-item dropdown" id="myDropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  MHE  </a>
-              <ul class="dropdown-menu">
-              
+              <ul class="dropdown-menu">                
                 <li> <a class="dropdown-item" href="#"> CMHE(MHA) &raquo; </a>
                   <ul class="submenu dropdown-menu">
-                    <li><a class="dropdown-item active" href="application.html" >Application</a></li>
+                    <li><a class="dropdown-item" href="application.html" >Application</a></li>
                     <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li>
                   </ul>
                 </li>
@@ -87,65 +87,113 @@
            
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="smha.html">SMHA</a>
-              </li>         
+              </li>          
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contact Us
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="directory.html">Directory</a></li>
-                <li><a class="dropdown-item" href="location.html">Location</a></li>               
+                <li><a class="dropdown-item active" href="location.html">Location</a></li>               
               </ul>
             </li>             
           </ul>            
         </div>
       </div>
   </nav>
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
+     
 
-   
     <main>
-
-        <section class="banner">
-            <img src="assets/images/application.jpg" class="img-fluid mx-auto">
-        </section>
-<section class="bg-breadcream">
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12 py-2">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Application</li>
-                        </ol>
-                      </nav>
+        <!-- <section class="banner">
+            <img src="assets/images/who.jpg" class="img-fluid mx-auto">
+        </section> -->
+        <section class="bg-breadcream">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Directory</li>
+                            </ol>
+                          </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-        <section class=" w-100 my-5">
-            <div class="container application d-flex justify-content-center py-2">
-                
-              <div class="card">
-                <h3>Upload Files</h3>
-                <div class="drop_box">
-                  <header>
-                    <h4>Select File here</h4>
-                  </header>
-                  <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
-                  <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
-                  <button class="btn">Choose File</button>
-                </div>            
+        </section>
+
+        <section class=" w-100 py-3">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                      <div class="mainHeading">
+                          Directory
+                      </div>
+                  </div> 
               </div>
-               
+
+              <ul class="row prc-address mb-3">
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="city-title-two">NIMHANS</div>
+                    <address>
+                        <strong>Central Mental Health Authority</strong><br> Department
+                        <br> Address<br> City, State – 000000
+
+                    </address>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="city-title">PGIMSR, Bengaluru</div>
+                    <address>
+                        <strong>Central Mental Health Authority</strong><br> Department
+                        <br> Address<br> City, State – 000000
+                    </address>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="city-title-two">AIIMS Deoghar</div>
+                    <address>
+                        <strong>Central Mental Health Authority</strong><br> Department
+                        <br> Address<br> City, State – 000000
+                    </address>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="city-title">AIIMS Gorakhpur</div>
+                    <address>
+                        <strong>Central Mental Health Authority</strong><br> Department
+                        <br> Address<br> City, State – 000000
+                    </address>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="city-title-two">Lady Harding Medical College, New Delhi</div>
+                    <address>
+                        <strong>Central Mental Health Authority</strong><br> Department
+                        <br> Address<br> City, State – 000000
+                    </address>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="city-title">AIIMS Bathinda </div>
+                    <address>
+                        <strong>Central Mental Health Authority</strong><br> Department
+                        <br> Address<br> City, State – 000000
+                    </address>
+                </li>    
+            </ul>
+
+            
+
+         
+
+         
+
+              
+
             </div>
         </section>
 
-       
+     
+           
 
-        
+    
 
     </main>
 
@@ -188,51 +236,6 @@
     </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-var btn = $('#button');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
-
-const dropArea = document.querySelector(".drop_box"),
-  button = dropArea.querySelector("button"),
-  dragText = dropArea.querySelector("header"),
-  input = dropArea.querySelector("input");
-let file;
-var filename;
-
-button.onclick = () => {
-  input.click();
-};
-
-input.addEventListener("change", function (e) {
-  var fileName = e.target.files[0].name;
-  let filedata = `
-    <form action="" method="post">
-    <div class="form">
-    <h4>${fileName}</h4>
-    <input type="email" placeholder="Enter email upload file">
-    <button class="btn">Upload</button>
-    </div>
-    </form>`;
-  dropArea.innerHTML = filedata;
-});
-
-
-
-
-    </script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
   </body>
 </html>
