@@ -45,6 +45,7 @@
     --blue:#132573;
     --green:#57c12a;
     --darkBlue:#0e2d7e;
+    --deepsafran: #ff9933;
 
  }
 
@@ -1260,12 +1261,12 @@ ul.introDetails li strong{
   font-weight: 600;
   font-size: 1.0rem;
 }
-p.indent{
+/* p.indent{
   text-indent: 50px;
   text-transform: capitalize;
   color: var(--red);
   font-size: 150%;
-}
+} */
 
 
 
@@ -1496,14 +1497,12 @@ figcaption small{
   margin: 0;
   position: relative;
 }
-
 .accordionIcon {
   position: absolute;
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
 }
-
 .accordionIcon::after {
   content: '';
   position: absolute;
@@ -1514,7 +1513,6 @@ figcaption small{
   top: -13px;
   left: -6px;
 }
-
 .accordionIcon .line-01,
 .accordionIcon .line-02 {
   position: absolute;
@@ -1525,29 +1523,24 @@ figcaption small{
   background-color: var(--deepsafran);
   transition: 0.3s;
 }
-
 .accordionIcon .line-02 {
   transform: rotate(90deg);
 }
-
 .accordionContent {
   display: none;
-  border-top: #747171 solid 0.5px;
+  border-top: var(--green) solid 0.5px;
 }
-
 .accordion--open .line-02 {
   transform: rotate(0deg);
 }
-
 /* end Required CSS */
 
-
-.accordion {
+.accordionWrapper{
   margin-top: -1px;
-  border-top: 1px solid var(--deepsafran);
-  border-bottom: 1px solid var(--deepsafran);
+  /* border-top: 1px solid var(--deepsafran);
+  border-bottom: 1px solid var(--deepsafran); */
+  border: solid #efefef 1px;
   counter-increment: counter 1;
-
   background: #f7f7f7;
   box-sizing: border-box;
   padding: 10px 25px;
@@ -1572,16 +1565,18 @@ figcaption small{
 }
 
 .accordionContent {
-  padding: 24px 16px 16px;
-  background: beige;
+min-height: 0px;
+clear: both;
+  padding: 24px 16px 16px;  
 }
 
 .accordionContent p {
-  margin: 0 0 16px;
+  /* margin: 0 0 16px;
   color: #555;
   font-size: 0.99rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400; */
+  line-height: 1.8;
 }
 
 /* .accordionTitle:hover {
@@ -1599,19 +1594,23 @@ figcaption small{
   color: var(--green);
 }
 
+.accordionWrapper.accordion--open{
+  border: solid var(--green) 1px;
+}
+
 .accordion--open .line-01,
 .accordion--open .line-02 {
   background-color: #fff;
   background-color: #FFAE00;
 }
-
+/*
 .accordionContent ul {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.accordionContent li {
+ .accordionContent li {
   position: relative;
   width: 100%;
   color: #323232;
@@ -1641,4 +1640,4 @@ figcaption small{
   border-radius: 50%;
   top: 6px;
   left: 0;
-}
+} */
