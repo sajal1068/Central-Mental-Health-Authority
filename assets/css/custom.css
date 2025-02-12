@@ -1627,17 +1627,22 @@ figcaption small{
 }
 .titleBox{
   width: 100%;
-  border-radius: 8px;
-  background: #f2f2f2;
-  margin: 15px 0;
-  padding: 10px 9px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--blue);
+    border-radius: 8px;
+    background: #f2f2f2;
+    margin: 15px 0;
+    padding: 10px 9px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--blue);
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ul.prc-address{
-  width: 100%;	  
+  width: calc(100% - 3px);
+  margin: auto;	  
   padding: 0;
   box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
   display: flex;
@@ -1766,7 +1771,93 @@ ul.prc-address li{
   display: block;
 }
 
+.establishmentBox{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
+.cardBox {
+  width: 100%;
+  background-color: #fff;  
+  position: relative;
+  padding: 40px 10px 30px 10px;  
+  min-height: 247px;  
+  z-index: 99;
+}
 
+.cardBox::after{
+  content: '';
+  position: absolute;
+  background-image: url('../images/reactangle.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-position: right;
+
+}
+.cardBox::before{
+  content: '';
+  position: absolute;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  background-color: #fafafa;
+  border-radius: 25px;
+  left:15px;
+  top:15px;
+  padding: 0 10px 0 20px;
+  z-index: -1;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.containerBox .card:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.college-name {
+  font-weight: bold;
+  font-size: 0.99rem;
+  color: #555;
+  line-height: 1.3;
+  padding: 10px 5px 5px 20px;
+}
+
+.registration-number {
+  padding: 10px 20px 20px;
+}
+
+.registration-number span {
+  font-size: 0.8rem;
+  color: #132573; 
+  display: block;
+}
+
+.registration-number strong {
+  font-size: 0.85rem;
+  color: #629902; 
+  font-weight: 600;
+}
+
+.registration-year {  
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding-left: 20px;
+  color: #132573; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center horizontally */
+  }
+
+  .card {
+      width: 90%; /* Make cards take up most of the width */
+      margin-bottom: 20px; /* Add spacing between stacked cards */
+  }
+}
 
 
