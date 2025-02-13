@@ -1663,6 +1663,20 @@ ul.prc-address li{
   color:#fff 
 }
 
+.city-title-two{
+  font-size: 0.99rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.RegistrationNo{
+  font-size: 0.8rem;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.prc-address address{
+  font-size: 0.9rem;  
+}
 
 .pdfDownload{
   width: 100%; 
