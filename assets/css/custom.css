@@ -1664,14 +1664,21 @@ ul.prc-address li{
 }
 
 .city-title-two{
-  font-size: 0.99rem;
+  font-size: 1.09rem;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
 }
 .RegistrationNo{
   font-size: 0.8rem;
-  padding: 10px 0;
-  font-weight: 600;
+  padding: 5px 0;
+  font-weight: 500;
+}
+.department {
+  width: 100%;
+  font-size:0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 5px 0 ;
 }
 
 .prc-address address{
@@ -1798,6 +1805,7 @@ ul.prc-address li{
   padding: 40px 10px 30px 10px;  
   min-height: 247px;  
   z-index: 99;
+  border-radius: 25px;
 }
 
 .cardBox::after{
@@ -1811,6 +1819,8 @@ ul.prc-address li{
   left: 0;
   background-position: right;
 
+
+  
 }
 .cardBox::before{
   content: '';
@@ -1824,6 +1834,7 @@ ul.prc-address li{
   padding: 0 10px 0 20px;
   z-index: -1;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
 }
 
 .containerBox .card:hover {
@@ -1920,7 +1931,49 @@ ul.romanalphabet {
   color: var(--green);
 }
 
+.rounded-rectangle {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* Text color */
+  padding: 20px;
+  border-radius: 20px; /* Adjust for desired roundness */
+  text-align: center; /* Center the text */
+  /* Other styling as needed (width, etc.) */
+  display: inline-block; /* Or block, depending on your layout */
+}
+.carousel-caption{
+  
+  max-width: 70%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.carousel-caption h6{
+  font-size: 0.99rem;
+  color:#fff;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Start slightly below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* You can add more animations (e.g., slideInLeft, zoomIn) as needed */
+
+.animated-text {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initially slightly below its final position */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.carousel-item.active .animated-text {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to its final position */
+}
 
 
 
