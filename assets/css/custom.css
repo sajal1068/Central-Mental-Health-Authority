@@ -1781,7 +1781,7 @@ ul.prc-address li{
   padding: 0;
   margin: 0;
   background-color: #1369ce;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   left: 0;
   transition: all 0.5s ease 0s;
@@ -1940,42 +1940,103 @@ ul.romanalphabet {
   /* Other styling as needed (width, etc.) */
   display: inline-block; /* Or block, depending on your layout */
 }
-.carousel-caption{
-  
-  max-width: 70%;
-  margin: auto;
-  background-color: rgba(0,0,0,0.5);
-}
-.carousel-caption h6{
-  font-size: 0.99rem;
-  color:#fff;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* Optional: Start slightly below */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Caption Styling */
+.carousel-caption {
+  position: absolute;
+  left: 0; 
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: end; 
+  align-items: center; 
+  height: 100%; 
 }
 
-/* You can add more animations (e.g., slideInLeft, zoomIn) as needed */
 
-.animated-text {
+.carousel-caption h5,
+.carousel-caption p {
+  color: white; /* White text */
   opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Initially slightly below its final position */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  transform: translateY(20px); /* Initially slightly below */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions */
 }
 
-.carousel-item.active .animated-text {
-  opacity: 1; /* Fade in */
-  transform: translateY(0); /* Move to its final position */
+.carousel-item.active .carousel-caption h5,
+.carousel-item.active .carousel-caption p {
+  opacity: 1; /* Show when active */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* .carousel-caption h5 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  animation-delay: 0.2s; 
+} */
+
+.carousel-caption p {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.99em;
+  font-weight: 300;
+  animation-delay: 0.4s; 
+}
+
+.privacyDiv .subHeading {
+  font-size: 1.25em;
+  padding: 10px 0;
+  font-weight: 600;
+  color: var(--textcolorlightBlack);
+  position: relative;
+  line-height: 1;
+  margin: 0 0 15px 0;
+}
+
+.privacyDiv .subHeading::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  width: 50px;
+  height: 3px;
+  background: var(--red);
+  left: 0;
 }
 
 
+.right-key {
+  width: 100%;
+  background: #f6f6f6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 25px 25px;
+  margin: auto;
+  line-height: 1.6;
+  align-items: center;
+}
+.key-Heading{
+  position: relative;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--green);
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+.key-Heading::after{
+  position: absolute;
+  content: '';
+  top: calc(100% + 5px);
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--green);
+}
+.right-key p{
+  font-size: 0.99rem;
+}
 
 
 
