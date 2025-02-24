@@ -701,6 +701,26 @@ if (window.innerWidth < 992) {
 $('.arrows').click(function () {
       $(".contact_info_sec").toggleClass("moveclass", 1000);  
 });
+
+
+
+    const myCarousel = document.getElementById('carouselExampleDark')
+    const carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000, // Time in milliseconds between slide changes (3 seconds in this example)
+        ride: 'carousel' // Ensure the carousel starts automatically
+    })
+
+    // Optional: Add event listeners for more control
+    myCarousel.addEventListener('slid.bs.carousel', function (event) {
+        // Called after a slide transition.  You can access the active slide here.
+        console.log("Slide changed");
+    })
+
+     myCarousel.addEventListener('slide.bs.carousel', function (event) {
+        // Called before a slide transition.
+        console.log("Slide is about to change");
+    })
+
     </script>
   </body>
 </html>
